@@ -14,3 +14,4 @@ This is the backend for the **Weight Race** application. It allows users to trac
    ```bash
    git clone https://github.com/your-username/weight-race-backend.git
    cd weight-race-backend
+
