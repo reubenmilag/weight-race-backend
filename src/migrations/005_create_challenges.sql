@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS challenges (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  creator_id INT NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  description VARCHAR(500) NULL,
+  type VARCHAR(50) NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL,
+  target VARCHAR(255) NULL,
+  created_at DATETIME NOT NULL,
+  FOREIGN KEY (creator_id) REFERENCES users(id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -1,0 +1,37 @@
+{
+  "name": "weight-race-backend",
+  "version": "0.0.1",
+  "description": "This is the backend for the **Weight Race** application. It allows users to track their weight, set goals, and participate in challenges with friends in a fun and competitive way.",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "migrate": "node ./src/migrations/runMigrations.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reubenmilag/weight-race-backend.git"
+  },
+  "author": "Reuben Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reubenmilag/weight-race-backend/issues"
+  },
+  "homepage": "https://github.com/reubenmilag/weight-race-backend#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "@fastify/env": "^5.0.3",
+    "@fastify/jwt": "^10.0.0",
+    "@fastify/sensible": "^6.0.3",
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3",
+    "fastify": "^5.6.1",
+    "joi": "^18.0.1",
+    "mysql2": "^3.15.3"
+  }
+}
